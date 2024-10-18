@@ -1,1 +1,0 @@
-# alejandrayala.github.io
