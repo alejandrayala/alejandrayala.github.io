@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios HTML</title>
+<link href="../css/estilos_mios.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		p{
+			margin-bottom: 20px;
+		}
+        header {
+            background-color: #ce7095;
+            color: white;
+        }
+        nav{
+            background-color:#FFCBDB;
+        }
+        main{
+            background-color:#FFC0CB;
+        }
+        footer{
+            background-color: #ce7095;
+            color: white;
+        }
+        section{
+            background-color:#FFCBDB;
+            color: darkslategray;
+        }
+         li{
+            background-color: ##F485A7;
+            border-color: #ce7095;
+            border-style: solid;
+            display: inline-block;
+        }
+         nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li:hover{
+            background-color: #ce7095;
+        }
+        nav ul li a:active{
+            color: darkblue;
+        }
+        nav ul li a:hover{
+            color: aliceblue;
+            font-weight: bold;
+        }
+        main nav{
+             background-color:transparent;
+        }
+        a h2:hover{
+            color: white;
+        }
+		form{
+			width: 50%;
+			height: auto;
+			padding: 30px;
+			color:#752445;
+			background-color:#EC9EB2;
+			margin: 0 auto;
+		}
+		label{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			margin-bottom: 20px;
+			margin-top: 30px;
+		}
+		label, input{
+			
+			margin-left: 0px;
+		}
+		table{
+			margin-bottom: 20px;
+		}
+		input[type=text], input[type=password], input[type=number],
+		input[type=email],
+		input[type=date],
+		input[type=tel],
+		input[type=url]
+		{
+			width: 100%;
+			margin-bottom: 20px;
+			color: #ce7095;
+			padding: 8px;
+			font-weight: bold;
+			border: 2px solid #F485A7;
+			border-radius: 8px;
+			background-color: #f7f1e1;
+		}
+		input[type=file]{
+			background-color: transparent;
+		}
+		input[type=color]{
+			width: 100%;
+			height: 42px;
+			padding: 3px;
+			margin-bottom: 20px;
+			border: 2px solid #F485A7;
+			border-radius: 8px;
+			background-color: #f7f1e1;
+		}
+		input[type=submit]{
+			width: 30%;
+			background-color:#F8C0D5;
+			padding: 10px;
+			margin: 20px auto;
+			border-radius: 6px;
+			color:#752445;
+			font-weight: bolder;
+			
+			display: block;
+			
+		}
+		input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number] :focus,
+		input[type=url]:focus{ 
+			background-color: #ffdbd7;
+			border: 3px solid #752445;
+		}
+		select{
+			width: 100%;
+			margin-bottom: 20px;
+			color: #ce7095;
+			padding: 8px;
+			font-weight: bold;
+			border: 2px solid #F485A7;
+			border-radius: 8px;
+			background-color: #f7f1e1;
+		}
+		input::file-selector-button{
+			width: 44%;
+			background-color:#752445;
+			padding: 10px;
+			margin: 20px auto;
+			border-radius: 6px;
+			color: white;
+			font-size: 12px;
+			margin-right: 10px;
+			
+		}
+	</style>
+</head>
+
+<body>
+<header>
+  <h1>Formularios en html</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="listas_orivel.html" target="_blank">Listas</a></li>
+                <li><a href="enlaces_orivel.html" target="_blank">Enlaces</a></li>
+                <li><a href="tablas_orivel.html" target="_blank">Tablas</a></li>
+                <li><a href="imagenes_orivel.html" target="_blank">Imágenes</a></li>
+                <li><a href="audio_orivel.html" target="_blank">Audio</a></li>
+                <li><a href="video_orivel.html" target="_blank">Vídeo</a></li>
+                <li><a href="formulario_orivel.html" target="_blank">Formulario</a></li>
+	</ul>	
+</nav>
+<main>
+  <section>
+    <h2>Formulario Usuario 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magni laudantium provident doloremque in repellat explicabo, labore reiciendis magnam neque aliquid beatae at, quas cumque delectus quibusdam earum voluptatum voluptatem non quidem animi cupiditate est a ab. Nam tenetur, natus magni at. Aliquid eius porro vel aliquam rerum nisi quos dicta, laborum ea. Saepe, tenetur quis debitis quibusdam sunt id eos eaque voluptatem reiciendis sit omnis consequatur quod, laudantium quam explicabo natus alias, placeat odio. Voluptas obcaecati commodi quaerat eveniet rerum nisi earum, aspernatur totam! Officia voluptatibus ex magni illum, modi beatae? Numquam id nulla quis perferendis illum, esse iusto!</p>
+	 <form action="" method="get">
+	 	<label id="">Nombre:</label>
+		<input type="text" id="nombre" name="nombre">
+		<label id="">Contraseña</label>
+		<input type="password" id="contrasena" name="contrasena">
+		<input type="submit" value="Enviar">
+		 
+	 </form>
+  </section>
+  <section>
+    <h2>Formulario 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit excepturi deserunt nostrum tempore non, optio illum rem mollitia itaque laboriosam consectetur ullam quasi harum ratione porro. Illo expedita sapiente sequi minus eligendi pariatur totam culpa ducimus sed voluptas non accusantium est, velit ad hic sunt delectus rem, deserunt aspernatur temporibus cumque. Laudantium modi repudiandae porro, consequuntur, iure dignissimos aliquam, minus cumque dicta quia quas est ullam! Architecto ut repudiandae officia saepe inventore, odit iste? Nulla ipsam vel, rerum dolore autem ex, laboriosam aperiam omnis maiores aliquid quae cum officiis quas vero exercitationem nihil consequatur inventore nostrum, quasi odio debitis ab.</p>
+    <form id="form1" name="form1" method="get">
+      <label for="nom">Nombre:</label>
+      <input type="text" name="nom" id="nom">
+      <label for="edad">Edad:</label>
+      <input type="number" name="edad" id="edad" min="18" max="100">
+	  <label for="select"> Estado:</label>
+	  <select name="estado" id="estado">
+		<option value="Aguascalientes">Aguascalientes</option>
+		<option value="Colima">Colima</option>
+		<option value="Durango">Durango</option>
+		<option value="Jalisco">Jalisco</option>
+		<option value="Nayarit">Nayarit</option>
+		<option value="Puebla">Puebla</option>
+	  </select>
+	  <input type="submit" name="submit" id="submit" value="Enviar">
+    </form>
+	 
+  </section>
+  <section>
+    <h2>Formulario 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit mollitia maxime doloribus assumenda voluptas ut distinctio. Dolores reprehenderit voluptatum ut dolorem eligendi expedita est sequi quod dolore in tenetur tempore quae laboriosam, at animi ad enim, culpa totam laudantium nostrum quidem. Sapiente numquam nostrum suscipit repellat, omnis cumque. Fugit vel aliquam quibusdam doloribus tempora dolores quo atque, similique excepturi ducimus accusantium rerum sequi deserunt explicabo blanditiis debitis quis unde labore beatae repellat saepe facilis. Dolor repellendus voluptatem aperiam dolorum aut eius ex illum sunt rem deleniti enim nihil, accusamus fugit blanditiis aliquam amet at consequatur, necessitatibus. Provident officiis, optio illo.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="textfield">Nombre:</label>
+      <input type="text" name="textfield" id="textfield">
+      <label for="G&eacute;nero">Género</label>
+	  <table style="width: 40%">
+        <tr>
+            <td> <input type="radio" name="G&eacute;nero" value="fem" id="Geacutenero_0"></td>
+			<td><label> Femenino</label></td>
+		  
+        </tr>
+        <tr>
+            <td><input type="radio" name="G&eacute;nero" value="mas" id="Geacutenero_1">
+            </td>
+			<td><label>Masculino</label></td>
+        </tr>
+        <tr>
+          
+			<td><input type="radio" name="G&eacute;nero" value="otro" id="Geacutenero_2"></td>
+			<td><label>Otro</label></td>
+        </tr>
+      </table>
+	  <label for="musica">¿Cuál es tu género musical favorito?</label>
+		<p>
+		   <input type="checkbox" name="musica" value="clasica" id="musica_0"><label style="padding-left:10px; color: #752445;">Clásica</label>
+		  <br>
+		  <input type="checkbox" name="musica" value="pop" id="musica_1"><label style="padding-left:10px; color:#752445; ">Pop</label>
+		  <br>
+		  <input type="checkbox" name="musica" value="rock" id="musica_2"><label style="padding-left:10px; color: #752445;">Rock</label>
+		  <br>
+		 <input type="checkbox" name="musica" value="tropical" id="musica_3"> <label style="padding-left:6px; color: #752445;">Tropical</label>
+		  <br>
+		  <input type="checkbox" name="musica" value="jazz" id="musica_4"><label style="padding-left:10px; color:#752445; ">Jazz</label>
+		  <br>
+	  </p>
+		<input type="submit" name="submit" id="enviar" value="Enviar">
+		
+    </form>
+
+  </section>
+  <section>
+    <h2>Cuestionario</h2>
+    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia reiciendis adipisci, amet harum, iure repudiandae quod, maxime sint eos, aut quae fugiat. Aspernatur ducimus esse voluptas nostrum laborum rem, harum rerum illum aliquid cumque culpa explicabo, hic quas! Eligendi laudantium, sapiente sit dolor aspernatur doloremque earum ab ex ipsam dolorem. Officia minima repellat odio molestiae rem molestias dolore optio et incidunt. Labore sint sit dolor, in nisi optio ullam eligendi nemo, fugiat facere aspernatur ipsum sequi libero accusantium tenetur pariatur. Vel quia voluptate sit iste nihil ullam ab quam pariatur expedita fuga tempore vitae sequi, facilis, possimus eveniet a!</p>
+	  
+    <form id="form3" name="form3" method="get">
+	
+	
+	<label for="textfield">¿Cuál es tu nombre completo?</label>
+    <input type="text" name="nomc" id="nomc">
+	<label for="email">¿Cuál es tu correo electrónico?</label>
+	<input type="email" id="email" name="email">
+	<label for="tel">Introduce tu número de teléfono (XXX-XXX-XX-XX)</label>
+	<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+	<label for="cumple">¿En qué fecha naciste?</label>
+	<input type="date" id="cumple" name="cumple">
+	<label for="años">¿Cuántos años tienes?</label>
+    <input type="number" name="años" id="años" min="10" max="80">
+	<label for="edo"> ¿De dónde eres?</label>
+	<select name="edo" id="edo">
+		<option value="Puebla">Puebla</option>
+		<option value="Veracruz">Veracruz</option>
+		<option value="Queretaro">Querétaro</option>
+		<option value="Hidalgo">Hidalgo</option>
+		<option value="Otro">Otro</option>
+	</select>
+	<label for="colorfav">¿Cuál es tu color favorito?</label>
+	<input type="color" id="colorfav" name="color fav" value="#F485A7">
+	<label for="redes">¿Tienes Instagram?</label>
+	<table>
+	  <tr>
+	    <td><label>
+	      <input type="radio" name="redes" value="si" id="redes_0">
+	      Sí</label></td>
+	    </tr>
+	  <tr>
+	    <td><label>
+	      <input type="radio" name="redes" value="no" id="redes_1">
+	      No</label></td>
+	    </tr>
+	  </table>
+	  <label for="link">Si la respuesta es sí, introduce el link de tu perfil</label>
+	<input type="url" id="link" name="link">
+	<label for="mascotas">¿Tienes mascotas?</label>
+	<table>
+	  <tr>
+	    <td><label>
+	      <input type="radio" name="mascotas" value="si" id="mascotas_0">
+	      Sí</label></td>
+	    </tr>
+	  <tr>
+	    <td><label>
+	      <input type="radio" name="mascotas" value="no" id="mascotas_1">
+	      No</label></td>
+	    </tr>
+	  </table>
+	  <label for="myfile">Si la respuesta es sí, sube una foto de tu mascota</label>
+		<input type="file" id="myfile" name="myfile"><br>
+<input type="submit" value="Enviar">
+	
+	
+</form>
+  </section>
+	
+</main>
+<footer>
+  <h5>Elaborado por Orivel Alejandra Yañez Lara</h5>
+</footer>
+	
+</body>
+</html>

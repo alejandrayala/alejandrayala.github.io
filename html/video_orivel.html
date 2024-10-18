@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Vídeo en html</title>
+        <link rel="stylesheet" href="../css/estilos_mios.css" type="text/css">
+        <style type="text/css">
+        header {
+            background-color: #07BEB8;
+            color: white;
+        }
+        nav{
+            background-color:#9CEAEF;
+        }
+        main{
+            background-color:#68D8D6;
+            text-align: center;
+        }
+        footer{
+            background-color: #07BEB8;
+            color: white;
+        }
+        main section{
+            background-color:#C4FFF9;
+            color: darkslategray;
+            width: 39%;
+            height: 480px;
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        h2{
+            color: #07BEB8;
+            margin-bottom: 3px;
+        }
+        h1, h5{
+            text-align: center;
+        }
+        nav ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        li{
+            background-color: #3DCCC7;
+            border-color: #07BEB8;
+            border-style: solid;
+            display: inline-block;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li:hover{
+            background-color: #07BEB8;
+        }
+        nav ul li a:active{
+            color: darkblue;
+        }
+        nav ul li a:hover{
+            color: aliceblue;
+            font-weight: bold;
+        }
+        main nav{
+             background-color:transparent;
+        }
+        video{
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+        }
+        p{
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        nav ul{
+            text-align: center;
+        }
+        iframe{
+            text-align: center;
+        }
+        </style>
+    </head>
+   <body>
+        <header>
+            <h1>Vídeos en html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="listas_orivel.html" target="_blank">Listas</a></li>
+                <li><a href="enlaces_orivel.html" target="_blank">Enlaces</a></li>
+                <li><a href="tablas_orivel.html" target="_blank">Tablas</a></li>
+                <li><a href="imagenes_orivel.html" target="_blank">Imágenes</a></li>
+                <li><a href="audio_orivel.html" target="_blank">Audio</a></li>
+                <li><a href="video_orivel.html" target="_blank">Vídeo</a></li>
+                <li><a href="formulario_orivel.html" target="_blank">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="mar">
+                <h2>Mar</h2>
+                <p>El mar cubre más del 70% de la superficie de la Tierra y juega un papel fundamental en la regulación del clima, la provisión de recursos y el sustento de una increíble biodiversidad. Existen cinco océanos principales: el Pacífico, el Atlántico, el Índico, el Ártico y el Antártico (o Austral). El Océano Pacífico es el más grande, cubriendo más del 30% de la superficie del planeta.</p>
+                <video autoplay loop muted>
+                    <source src="../videos/mar.mp4">
+                    El navegador no soporta tu vídeo
+                </video>
+            </section>
+            <section id="vida marina">
+                <h2>Vida marina</h2>
+                <p> Los océanos albergan una amplia variedad de organismos, está dividida en diferentes ecosistemas, como arrecifes de coral, manglares, zonas de marea y mar profundo.
+                Es increíblemente diversa y fascinante, con especies que han evolucionado para sobrevivir en una amplia variedad de ambientes, desde las aguas cálidas y poco profundas hasta las oscuras profundidades del océano.</p>
+                <video autoplay muted>
+                    <source src="../videos/medusas.mp4">
+                    El navegador no soporta tu vídeo
+                </video>
+            </section>
+            <section id="ciclo del agua">
+                <h2>Ciclo del agua</h2>
+                <p>Los océanos son fundamentales para el ciclo del agua en la Tierra. El ciclo del agua es esencial para la regulación del clima y la distribución de agua dulce, un recurso vital para todos los seres vivos. A través de este, el agua se mueve entre los océanos, la atmósfera y la Tierra, renovando los suministros de agua dulce y permitiendo la existencia de ecosistemas.</p>
+                <video controls poster="../medios/imagenes/660daaf3693b0.jpeg">
+                    <source src="../videos/lluvia.mp4" type="video/mp4">
+                    El navegador no soporta tu vídeo
+                </video>                
+            </section>
+            <section id="contaminacion">
+                <h2>Contaminación</h2>
+                <p>La contaminación por plásticos y el aumento de la temperatura global debido al cambio climático están afectando gravemente los ecosistemas marinos.  Cada año, se estima que más de 8 millones de toneladas de plástico ingresan a los océanos. La conservación de los océanos y la reducción de la contaminación son desafíos importantes para la sostenibilidad ambiental.</p>
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/b8cfWYPd5iI?si=UKHiJ6JcWND4dmBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#mar">Mar</a></li>
+                    <li><a href="#vida marina">Vida marina</a></li>
+                    <li><a href="#ciclo del agua">Ciclo del agua</a></li>
+                    <li><a href="#contaminacion">Contaminación</a></li>
+                </ul>
+            </nav>
+            
+        </main>
+        <footer>
+            <h5>Elaborado por Orivel Alejandra Yañez Lara</h5>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,423 @@
+<html>
+    <head>
+        <title>Tablas</title>
+        <link rel="stylesheet" href="../css/estilos_mios.css" type="text/css">
+        <style type="text/css">
+            
+            header{
+                background-color: #90CF8E;
+                color: white;
+            }
+            section{
+                background-color: #E4FDE1;
+            }
+            nav{
+                background-color: #DAF2D7;
+            }
+            main{
+                background-color: #C6EDC3;
+            }
+            footer{
+                background-color: #90CF8E;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+
+            h2{
+                color: #5CC457;
+            }
+            h5{
+                color: white;
+            }
+            ul{
+            list-style-type: none;
+            text-align: center;
+            }
+            nav ul li{
+                background-color: #77D372;
+                border-color: #90CF8E;
+            }
+            nav ul li a{
+                color: white;
+            }
+            nav ul li:hover{
+            background-color: #3FBC39;
+            }
+            main nav{
+                background-color: transparent;
+            }
+            th{
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 14px;
+            }
+            td{
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 13px;
+            }
+            #tabla_uno {
+                width: 90%;
+                text-align: center;
+                margin: 0 auto;
+                color: darkslategray;
+                border-style: solid;
+                border-color: #90CF8E;
+                border-width:5px;
+                border-spacing: 10px;
+            }
+            #tabla_uno th {
+                background-color: #5CC457;
+                color: white;
+            }
+            #tabla_uno td{
+                background-color:  #A7DCA5;
+                text-align: left;
+                border-radius: 5px;
+                margin: 10px;
+                border-style: solid;
+                border-color: #90CF8E;
+                border-top-width: 3px;
+            }
+            /*#tabla_2{
+                color: #855e6e;
+            }
+            #tabla_2 td{
+                color: #855e6e;
+                height: 50px;
+                padding: 10px;
+            }*/
+            .tabla_dos{
+                width: 90%;
+                border-collapse: collapse;
+                border-color:  #5CC457;
+                border-style: solid;
+                margin: 0 auto;                
+            }
+            .tabla_dos th{
+                background-color: #5CC457;
+                color: white;
+            }
+            .tabla_dos td{
+                background-color:  #C6EDC3;
+            }
+            .tabla_dos td, .tabla_dos th{
+                border-color:  #90CF8E;
+                padding: 10px;
+                border-style: dashed;
+            }
+            #celda_centrada {
+                text-align: center;
+                padding: 0px;
+                background-color: #f7f1e1;
+            }
+            #tabla_zebra{
+                width: 90%;
+                border-collapse: collapse;
+                border-color:  #5CC457;
+                border-style: solid;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color: #A7DCA5;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #90CF8E;
+            }
+            #tabla_zebra thead tr{
+                background-color: #5CC457;
+                color: white;
+            }
+            #tabla_zebra th, #tabla_zebra td{
+                padding: 10px;
+                border-style: dashed;
+                border-color: #DAF2D7;               
+            }
+            .tabla_hover{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+                border-color: #90CF8E;
+                border-style: solid;
+            }
+            .tabla_hover tbody{
+                background-color: #C6EDC3;
+            }
+            .tabla_hover thead{
+                color: white;
+                background-color: #5CC457;
+            }
+            .tabla_hover th, .tabla_hover td{
+                padding: 5px;
+                border-style: dashed;
+                border-color: #DAF2D7;               
+            }
+            .tabla_hover tr:hover{
+                background-color: #90CF8E;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="listas_orivel.html" target="_blank">Listas</a></li>
+                <li><a href="enlaces_orivel.html" target="_blank">Enlaces</a></li>
+                <li><a href="tablas_orivel.html" target="_blank">Tablas</a></li>
+                <li><a href="imagenes_orivel.html" target="_blank">Imágenes</a></li>
+                <li><a href="audio_orivel.html" target="_blank">Audio</a></li>
+                <li><a href="video_orivel.html" target="_blank">Vídeo</a></li>
+                <li><a href="formulario_orivel.html" target="_blank">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="direc" style="overflow-x: auto">
+                <h2>Directorio</h2>
+                <p>En este espacio recopilé los datos de algunas de mis amistades más carcanas, colocando datos de contacto útiles como sus números y redes sociales.</p>
+                <table border="1" id="tabla_uno">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido paterno</th>
+                            <th>Apellido materno</th>
+                            <th>Teléfono</th>
+                            <th>Facebook</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alejandra</td>
+                            <td>Yañez</td>
+                            <td>Lara</td>
+                            <td>7752033470</td>
+                            <td>Alejandra Yañez</td>
+                        </tr>
+                        <tr>
+                            <td>Ximena Edith</td>
+                            <td>Valero</td>
+                            <td>Maya</td>
+                            <td>2226996421</td>
+                            <td>Edith Valero</td>
+                        </tr>
+                        <tr>
+                            <td>Daniela</td>
+                            <td>Xicoténcatl</td>
+                            <td>Medina</td>
+                            <td>2224699871</td>
+                            <td>Dani XicoMed</td>
+                        </tr>
+                        <tr>
+                            <td>Daniel</td>
+                            <td>Méndoza</td>
+                            <td>Domínguez</td>
+                            <td>2224987752</td>
+                            <td>Daniel MD</td>
+                        </tr>
+                        <tr>
+                            <td>Beatriz</td>
+                            <td>Salazar</td>
+                            <td>Paredes</td>
+                            <td>2226448720</td>
+                            <td>Betty SP</td>
+                        </tr>
+                        <tr>
+                            <td>Diana</td>
+                            <td>Mendoza</td>
+                            <td>Díaz</td>
+                            <td>226870064</td>
+                            <td>Diana Méndoza Díazz</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section id="coop" style="overflow-x: auto">
+                <h2>Cooperación</h2>
+                <p>Tabla que recopila los datos de las personas que han estado aportando para hacer un viaje ficticio a Italia en las vacaciones de navidad.</p>
+                <table id="tabla_2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width:200px;" >Nombre</th>
+                            <th style="width:150px;">Edad</th>
+                            <th style="width:200px;" colspan="2" >Teléfono</th>
+                            <th style="width:150px;">Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Georgina López Mendoza</td>
+                            <td style="text-align:center; padding:0px;">24</td>
+                            <td>2221846537</td>
+                            <td>2224598721</td>
+                            <td style="text-align: center; padding: 0px; background-color: #A7DCA5;">$100</td>
+                        </tr>
+                        <tr>
+                            <td>Juan Aguilar Díaz</td>
+                            <td style="text-align:center; padding:0px;">26</td>
+                            <td>2224513674</td>
+                            <td>2224598721</td>
+                            <td style="text-align: center; padding: 0px; background-color: #A7DCA5;">$250</td>
+                        </tr>
+                        <tr>
+                            <td>María Sánchez Rocha</td>
+                            <td style="text-align:center; padding:0px;">25</td>
+                            <td>2224183574</td>
+                            <td>2224598721</td>
+                            <td style="text-align: center; padding: 0px; background-color: #A7DCA5;">$50</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Alvarado Medina</td>
+                            <td style="text-align:center; padding:0px;">27</td>
+                            <td>2224651387</td>
+                            <td>2224598721</td>
+                            <td style="text-align: center; padding: 0px; background-color:  #A7DCA5;">$50</td>
+                        </tr>
+                        <tr>
+                            <td>Aaron Suárez Mejía</td>
+                            <td style="text-align:center; padding:0px;">26</td>
+                            <td>222451332</td>
+                            <td>2224598721</td>
+                            <td style="text-align: center; padding: 0px; background-color:  #A7DCA5;">$100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;">Total</td>
+                            <td style="text-align: center;
+                padding: 0px; background-color: #f7f1e1; background-color: #5CC457; color:white;" > $550 </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="horario" style="overflow-x: auto">
+                <h2>Horario</h2>
+                <p>A continuación, se presenta la transcripción detallada de mi horario correspondiente al séptimo semestre, organizado por días de la semana y asignaturas. </p>
+                <table id="tabla_zebra">
+                    <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    <tbody>
+                        <tr>
+                            <td>8:00-10:00</td>
+                            <td>Diseño publicitario</td>
+                            <td></td>
+                            <td>Metodología</td>
+                            <td></td>
+                            <td></td>
+                        </tr> 
+                        <tr>
+                            <td>10:00-12:00</td>
+                            <td>Taller VI</td>
+                            <td>Taller VI</td>
+                            <td>Metodología</td>
+                            <td>Redacción</td>
+                            <td>DIGU</td>
+                        </tr> 
+                        <tr>
+                            <td>12:00-2:00</td>
+                            <td>Taller VI</td>
+                            <td>Taller VI</td>
+                            <td>Publicidad</td>
+                            <td>Redacción</td>
+                            <td>DIGU</td>
+                        </tr> 
+                        <tr>
+                            <td>3:00-4:00</td>
+                            <td></td>
+                            <td>Gestión I</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr> 
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Desarrollo 3</td>
+                        </tr>
+                
+                    </tbody>
+                    </tr>
+                    </thead>
+                </table>
+            </section>
+            <section id="tarea" style="overflow-x: auto">
+                <h2>Tareas</h2>
+                <p>A continuación se presenta una tabla diseñada para organizar y resumir todas las tareas pendientes de la semana del 14 al 18 de octubre. Esta tabla incluye información clave como las fechas de entrega, los nombres de las asignaturas o proyectos, una breve descripción de cada tarea, y la modalidad del trabajo, es decir, si debe realizarse de manera individual o en equipo.</p>
+                <table class="tabla_hover">
+                    <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Tipo</th>
+                        <th>Descripción</th>
+                        <th>Entrega</th>
+                    <tbody>
+                        <tr>
+                            <td>Diseño publicitario</td>
+                            <td>Equipo</td>
+                            <td>Entrega de dos bocetos de anuncio para revista</td>
+                            <td>14/10/24</td>
+                        </tr> 
+                        <tr>
+                            <td>Taller VI</td>
+                            <td>Equipo</td>
+                            <td>Entrega de la planeación de actividades con el cliente y propuestas de marca</td>
+                            <td>14/10/24</td>
+                        </tr> 
+                        <tr>
+                            <td>Gestión I</td>
+                            <td>Equipo</td>
+                            <td>Avances de investigación para apertura de despacho</td>
+                            <td>15/10/24</td>
+                        </tr> 
+                        <tr>
+                            <td>Metodología</td>
+                            <td>Equipo</td>
+                            <td>Entrega de segundo parcial: objetivos y justificación</td>
+                            <td>16/10/24</td>
+                        </tr> 
+                        <tr>
+                            <td>Redacción</td>
+                            <td>Equipo</td>
+                            <td>Avance de tres páginas de la monografía y organizador gráfico</td>
+                            <td>17/10/24</td>
+                        </tr>
+                       
+                    </tbody>
+                    </tr>
+                    </thead>
+                </table>
+            </section>
+           <nav>
+                <ul>
+                    <li><a href="#direc">Directorio</a></li>
+                    <li><a href="#coop">Cooperación</a></li>
+                    <li><a href="#horario">Horario</a></li>
+                    <li><a href="#tarea">Tareas</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <h5>Elaborado por Orivel Alejandra Yañez Lara</h5>
+        </footer>
+    </body>
+</html>
